@@ -32,7 +32,7 @@ def play(array)
   if (array.include?(pick))
     puts "Playing #{pick}"
   elsif (array.include?(pick.to_i - 1))
-    puts array[pick.to_i -1]
+    puts "Playing #{array[pick.to_i -1]}
   else
     puts "Invalid input, please try again"
   end
