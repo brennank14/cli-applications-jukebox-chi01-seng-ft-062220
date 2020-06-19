@@ -31,8 +31,8 @@ def play(array)
   pick = gets.strip
   if (array.include?(pick))
     puts "Playing #{pick}"
-  elsif (array.include?(pick.to_i - 1))
-    puts "Playing #{array[pick.to_i -1]}"
+  elsif (array.each_with_index.include?(pick.to_i - 1))
+    puts "Playing #{array.each_with_index[pick.to_i -1]}"
   else
     puts "Invalid input, please try again"
   end
