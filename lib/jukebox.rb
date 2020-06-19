@@ -34,7 +34,7 @@ def play(array)
   elsif (array.each_with_index.include?(pick.to_i - 1))
     puts "Playing #{array.each_with_index[pick.to_i -1]"
   else
-    puts "Invalid input, please try again"
+    puts "invalid input, please try again"
   end
 end
 
