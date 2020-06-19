@@ -29,7 +29,7 @@ end
 def play(array)
   puts "Please enter a song name or number:"
   pick = gets.strip
-  if (array.include?(pick)) 
+  if (array.include?(pick))
     puts "Playing #{pick}"
     elsif (array.include?(pick.to_i - 1))
       puts array[pick.to_i -1]
